@@ -1,0 +1,49 @@
+{
+  "name": "@composable-finance/v1-sdk-typescript",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "version": "1.0.1",
+  "description": "The next level Typescript cross-chain toolset",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": "https://github.com/ComposableFi/v1-sdk-typescript.git",
+  "keywords": [
+    "composable finance",
+    "bridge",
+    "crosslayer",
+    "mosaic"
+  ],
+  "module": "dist/v1-sdk-typescript.esm.js",
+  "scripts": {
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test",
+    "test:coverage": "tsdx test --coverage"
+  },
+  "dependencies": {
+    "@ethersproject/address": "^5.4.0",
+    "big.js": "^6.1.1",
+    "decimal.js-light": "^2.5.1",
+    "jsbi": "^3.2.5",
+    "tiny-invariant": "^1.1.0",
+    "toformat": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/big.js": "^6.1.2",
+    "@types/jest": "^24.0.25",
+    "tsdx": "^0.14.1"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true
+  }
+}
