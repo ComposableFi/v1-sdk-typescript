@@ -19,7 +19,7 @@ describe('transfer', () => {
     DAI,
     CurrencyAmount.fromRawAmount(DAI, '20'),
     CurrencyAmount.fromRawAmount(DAI, '50'),
-    CurrencyAmount.fromRawAmount(DAI, '35')
+    CurrencyAmount.fromRawAmount(DAI, '100')
   )
   const supportedTokensFrom = {
     '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48': stUSDC,
@@ -39,7 +39,7 @@ describe('transfer', () => {
     DAI2,
     CurrencyAmount.fromRawAmount(DAI, '20'),
     CurrencyAmount.fromRawAmount(DAI, '30'),
-    CurrencyAmount.fromRawAmount(DAI, '100')
+    CurrencyAmount.fromRawAmount(DAI, '35')
   )
   const supportedTokensTo = { '0x6B175474E89094C44Da98b954EedeAC495271d0F': stDAI2 }
   const vaultTo = new Vault(

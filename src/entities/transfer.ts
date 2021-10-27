@@ -33,13 +33,14 @@ export class Transfer<TInput extends Currency> {
 
   public verifyTransfer = () => {
     const fromToken = this.direction.supportedSourceToken
+    const toToken = this.direction.supportedDestinationToken
 
     invariant(
       this.amount.greaterThanOrEqual(fromToken.minDeposit) && this.amount.lessThanOrEqual(fromToken.maxDeposit),
       'AMOUNT_THRESHOLD'
     )
 
-    invariant(this.amount.lessThanOrEqual(fromToken.availableLiquidity), 'LIQUIDITY')
+    invariant(this.amount.lessThanOrEqual(toToken.availableLiquidity), 'LIQUIDITY')
 
     invariant(
       JSBI.greaterThanOrEqual(
