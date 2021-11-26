@@ -4,7 +4,7 @@
   "publishConfig": {
     "access": "restricted"
   },
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "The next level Typescript cross-chain toolset",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
